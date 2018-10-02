@@ -1,6 +1,6 @@
 # ora
 --
-    import "gopkg.in/rana/ora.v4"
+    import "github.com/sergeantwolf/ora"
 
 Package ora implements an Oracle database driver.
 
@@ -11,7 +11,7 @@ Package ora implements an Oracle database driver.
     import (
     	"database/sql"
 
-    	_ "gopkg.in/rana/ora.v4"
+    	_ "github.com/sergeantwolf/ora"
     )
 
     func main() {
@@ -29,7 +29,7 @@ Package ora implements an Oracle database driver.
 Call stored procedure with OUT parameters:
 
     import (
-    	"gopkg.in/rana/ora.v4"
+    	"github.com/sergeantwolf/ora"
     )
 
     func main() {
@@ -114,7 +114,7 @@ your system, maybe tailored to your specific locations) to a folder in
 The ora package has no external Go dependencies and is available on GitHub and
 gopkg.in:
 
-    go get gopkg.in/rana/ora.v4
+    go get github.com/sergeantwolf/ora
 
 *WARNING*: If you have Oracle Instant Client 11.2, you'll need to add "-lnnz11"
 to the list of linked libs! Otherwise, you may encounter "undefined reference to
@@ -311,7 +311,7 @@ An example of using the ora package directly:
 
     import (
     	"fmt"
-    	"gopkg.in/rana/ora.v4"
+    	"github.com/sergeantwolf/ora"
     )
 
     func main() {
@@ -1066,8 +1066,8 @@ ora driver methods. For example:
 To use the standard Go log package:
 
     import (
-    	"gopkg.in/rana/ora.v4"
-    	"gopkg.in/rana/ora.v4/lg"
+    	"github.com/sergeantwolf/ora"
+    	"github.com/sergeantwolf/ora/lg"
     )
 
     func main() {
@@ -1098,8 +1098,8 @@ To use the glog package:
 
     import (
     	"flag"
-    	"gopkg.in/rana/ora.v4"
-    	"gopkg.in/rana/ora.v4/glg"
+    	"github.com/sergeantwolf/ora"
+    	"github.com/sergeantwolf/ora/glg"
     )
 
     func main() {
@@ -1132,8 +1132,8 @@ which produces a sample log of:
 To use the log15 package:
 
     import (
-    	"gopkg.in/rana/ora.v4"
-    	"gopkg.in/rana/ora.v4/lg15"
+    	"github.com/sergeantwolf/ora"
+    	"github.com/sergeantwolf/ora/lg15"
     )
     func main() {
     	// use the optional log15 package for ora logging
@@ -2797,10 +2797,10 @@ type LogDrvCfg struct {
 	//
 	// The default implementation uses the standard lib's log package.
 	//
-	// For a glog-based implementation, see gopkg.in/rana/ora.v4/glg.
+	// For a glog-based implementation, see github.com/sergeantwolf/ora/glg.
 	// LogDrvCfg.Logger = glg.Log
 	//
-	// For an gopkg.in/inconshreveable/log15.v2-based, see gopkg.in/rana/ora.v4/lg15.
+	// For an gopkg.in/inconshreveable/log15.v2-based, see github.com/sergeantwolf/ora/lg15.
 	// LogDrvCfg.Logger = lg15.Log
 	Logger Logger
 

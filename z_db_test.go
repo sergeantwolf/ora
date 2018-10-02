@@ -19,7 +19,7 @@ import (
 
 	"github.com/pkg/errors"
 	"golang.org/x/sync/errgroup"
-	"gopkg.in/rana/ora.v4"
+	"github.com/sergeantwolf/ora"
 )
 
 func Test_open_cursors_db(t *testing.T) {

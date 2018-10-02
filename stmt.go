@@ -361,7 +361,7 @@ func (stmt *Stmt) exeC(ctx context.Context, params []interface{}, isAssocArray b
 	}
 	// Get rowsAffected based on statement type
 	switch stmtType {
-	case C.OCI_STMT_SELECT, C.OCI_STMT_UPDATE, C.OCI_STMT_DELETE, C.OCI_STMT_INSERT:
+	case C.OCI_STMT_SELECT, C.OCI_STMT_UPDATE, C.OCI_STMT_DELETE, C.OCI_STMT_INSERT, 16:
 		ra, err := stmt.attr(C.ROW_COUNT_LENGTH, C.OCI_ATTR_UB8_ROW_COUNT)
 		if err != nil {
 			return 0, 0, errE(err)

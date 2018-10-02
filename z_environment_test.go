@@ -10,7 +10,7 @@ import (
 	"testing"
 	"time"
 
-	"gopkg.in/rana/ora.v4"
+	"github.com/sergeantwolf/ora"
 )
 
 func TestOpenBadMemoryIssue207(t *testing.T) {

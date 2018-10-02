@@ -15,7 +15,7 @@ import (
 
 	_ "net/http/pprof"
 
-	_ "gopkg.in/rana/ora.v4"
+	_ "github.com/sergeantwolf/ora"
 )
 
 var db *sql.DB

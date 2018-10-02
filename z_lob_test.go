@@ -19,7 +19,7 @@ import (
 	"testing"
 	"time"
 
-	ora "gopkg.in/rana/ora.v4"
+	ora "github.com/sergeantwolf/ora"
 )
 
 func TestLOBCloseStatement(t *testing.T) {

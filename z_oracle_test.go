@@ -30,8 +30,8 @@ import (
 
 	"github.com/pkg/errors"
 
-	"gopkg.in/rana/ora.v4"
-	"gopkg.in/rana/ora.v4/tstlg"
+	"github.com/sergeantwolf/ora"
+	"github.com/sergeantwolf/ora/tstlg"
 )
 
 type oracleColumnType string

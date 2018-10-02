@@ -12,7 +12,7 @@ import (
 	"testing"
 
 	"github.com/pkg/errors"
-	"gopkg.in/rana/ora.v4"
+	"github.com/sergeantwolf/ora"
 )
 
 func TestIssue233(t *testing.T) {

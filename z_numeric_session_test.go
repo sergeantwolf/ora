@@ -11,7 +11,7 @@ import (
 	"strings"
 	"testing"
 
-	"gopkg.in/rana/ora.v4"
+	"github.com/sergeantwolf/ora"
 )
 
 //// numeric

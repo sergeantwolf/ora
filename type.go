@@ -16,8 +16,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"gopkg.in/rana/ora.v4/date"
-	"gopkg.in/rana/ora.v4/num"
+	"github.com/sergeantwolf/ora/date"
+	"github.com/sergeantwolf/ora/num"
 )
 
 // When a parent handle is freed, all child handles associated with it are also
